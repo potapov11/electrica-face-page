@@ -5,12 +5,12 @@ require 'phpmailer/Exception.php';
 
 $name = $_POST['name'];
 $tel = $_POST['tel'];
-$msg = $_POST['msg'];
+// $msg = $_POST['msg'];
 
 $title = 'Заявка с сайта';
 $body = '<p>Имя: <strong>'.$name.'</strong></p>'.
-        '<p>Телефон: <strong>'.$tel.'</strong></p>'.
-        '<p>Сообщение: <strong>'.$msg.'</strong></p>';
+        '<p>Телефон: <strong>'.$tel.'</strong></p>';
+        // '<p>Сообщение: <strong>'.$msg.'</strong></p>';
 
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
